@@ -75,17 +75,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CommandsManager.h" />
     <ClInclude Include="HelperFunctions.h" />
     <ClInclude Include="Logger.h" />
-    <ClInclude Include="Painter.h" />
     <ClInclude Include="SciencePlugin.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CommandsManager.cpp" />
     <ClCompile Include="HelperFunctions.cpp" />
     <ClCompile Include="Logger.cpp" />
-    <ClCompile Include="Painter.cpp" />
     <ClCompile Include="SciencePlugin.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

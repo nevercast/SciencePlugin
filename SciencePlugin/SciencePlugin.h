@@ -4,15 +4,11 @@
 #include <fstream>
 #include <sstream>
 #include "Logger.h"
-#include "CommandsManager.h"
-#include "Painter.h"
 
 class SciencePlugin : public BakkesMod::Plugin::BakkesModPlugin
 {
 private:
 	Logger logger;
-	CommandsManager cmdManager;
-	Painter painter;
 
 	RBState oldCarRBState;
 	RBState oldBallRBState;
@@ -23,8 +19,11 @@ private:
 public:
 	virtual void onLoad();
 	virtual void onUnLoad();
+
+	void OpenLog(std::string greeting);
+	void CloseLog();
 	void OnViewportTick();
-	void OnSetInput();
+	//void OnSetInput();
 
 	std::ofstream dump_file;
 
